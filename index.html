@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> PALITEX STORE </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link Biblioteca de Ícones -->
+  <script src="https://kit.fontawesome.com/559e095fe9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="col-md-12">
+        <h1 class="navbar-logo">PALITEX STORE</h1>
+        <div class= "logo">
+          <img src="diw2.jpg" alt="logo">
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="container-fluid">
+            <div class="form-group">
+              <label for="searchInput">O que está procurando?</label>
+              <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Digite aqui...">
+                <div class="input-group-append">
+                  <button id="searchButton" class="btn btn-primary">Pesquisar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li id="nav-item">
+            <a class="nav-link register" aria-current="page" href="#">Registrar</a>
+          </li>
+          <li id="nav-item">
+            <a class="nav-link account" aria-current="page" href="#">Minha Conta</a>
+          </li>
+          <li id="nav-item">
+            <a class="nav-link" href="#">Acompanhar pedido</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <select id="priceFilter" class="form-control">
+          <option value="">Todos os preços</option>
+          <option value="0-50">0-50</option>
+          <option value="51-100">51-100</option>
+          <option value="100+">100+</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <select id="categoryFilter" class="form-control">
+          <option value="">Todas as Categorias</option>
+        </select>
+      </div>
+    </div>
+    <h2>Nossos produtos:</h2>
+
+    <div class="row" id="products">
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5>Formas de Pagamento</h5>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-solid fa-barcode"></i>
+          <i class="fa-brands fa-pix"></i>
+
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Links Rapidos</h5>
+          <a class="nav-link-footer" href="#"> Ajuda</a>
+          <a class="nav-link-footer" href="#"> Politica de envio</a>
+          <a class="nav-link-footer" href="#"> Cancelamento e devoluções</a>
+          <a class="nav-link-footer" href="#"> FAQ</a>
+          <a class="nav-link-footer" href="#"> Politica de privacidade</a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Redes Sociais</h5>
+          <span class="redes-sociais">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-tumblr"></i>
+            <i class="fa-brands fa-square-google-plus"></i>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <h5>Contato</h5>
+          <p>Av.Brasil, 2023 Savassi - Belo Horizonte</p>
+          <i class="fa-solid fa-envelope"></i>
+          <span>sduque@sga.pucminas.br  Sofia Melo Duque 811374</span>
+          <br>
+          <i class="fa-solid fa-phone"></i>
+          <span>(31) 99888-6543</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+  <script src="filters.js"></script>
+</body>
+
+</html>
